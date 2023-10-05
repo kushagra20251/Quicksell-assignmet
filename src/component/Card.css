@@ -1,0 +1,54 @@
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    background-color: rgb(249, 249, 249);
+    width: 85%;
+    height: 5rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+
+.expanded-wrapper {
+    height: fit-content;
+    min-height: 5rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-id {
+    font-weight: 600;
+    color: rgba(8, 8, 8, 0.5);
+}
+
+.card-title {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    transition: max-width 0.3s ease;
+}
+
+.expanded-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.card-details {
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    width: fit-content;
+    padding: 2px 4px 2px 4px;
+    border-radius: 5px;
+    color: rgba(8, 8, 8, 0.5);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
